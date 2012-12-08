@@ -1,0 +1,11 @@
+{
+  "site": {
+    "title": "Arden Ash Design",
+    "url": "http://localhost:7000"
+  },
+    
+  "stacktrace": true,
+  "cache": {
+    "maxAge": 0
+  }
+}

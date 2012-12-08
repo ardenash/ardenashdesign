@@ -1,0 +1,64 @@
+{
+  "name": "ardenashdesign",
+  "subdomain": "ardenashdesign",
+  "domains": [
+    "ardenashdesign.com"
+  ],
+  "private": true,
+  "author": "Arden Ash <info@ardenash.com> (http://ardenash.com)",
+  "description": "Arden Ash Design",
+  "version": "0.0.1-1",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ardenash/ardenashdesign.git"
+  },
+  "bin": {},
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "keywords": [
+    "design",
+    "arden ash"
+  ],
+  "scripts": {
+    "predeploy": "node_modules/.bin/coffee -c -o lib src;npm run-script assets",
+    "postdeploy": "",
+    "start": "lib/index.js",
+    "server-watch": "node_modules/.bin/coffee -c -w  -o lib src",
+    "dev": "NODE_ENV=development nodemon lib/index.js"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "express": "3.0.3",
+    "jade": "0.27.6",
+    "stylus": "0.30.1",
+    "nib": "0.8.2",
+    "underscore": "1.4.2",
+    "async": "0.1.22",
+    "colors": "0.6.0-1",
+    "pkginfo": "0.2.3",
+    "nconf": "0.6.5",
+    "winston": "0.6.2",
+    "connect-flash": "0.1.0",
+    "ejs" : "0.8.3"
+  },
+  "bundledDependencies": [],
+  "devDependencies": {
+    "coffee-script": "1.4.0",
+    "should": "1.2.1",
+    "mocha": "1.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ardenash/ardenashdesign/issues"
+  },
+  "licenses": [
+    {
+      "type": "Private",
+      "url": "https://github.com/ardenash/ardenashdesign/issues/raw/master/LICENSE"
+    }
+  ]
+}
