@@ -64,6 +64,7 @@ module.exports = class ArdenAshDesign
       '_' : _
 
 
+    ###
     @app.use (req, res,next) =>
       res.locals.messages = expressMessages
       res.locals.infoFlash = () -> req.flash('info') || []
@@ -72,7 +73,7 @@ module.exports = class ArdenAshDesign
       res.locals.isInRole = (role) -> req.user && req.user.roles && !!_.find(req.user.roles,(x)-> x is role)
 
       next()
-
+    ###
 
     settings = 
       app: @app
